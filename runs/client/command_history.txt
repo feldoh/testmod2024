@@ -1,0 +1,14 @@
+/time
+/time query
+/time
+/time query daytime
+/time set
+/time set night
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/time set day
+/time set night
+/gamemode creative
+/gamemode survival
+/gamemode creative

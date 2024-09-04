@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "testmod2024:block/myface",
+    "particle": "testmod2024:block/myface"
+  },
+  "render_type": "solid"
+}

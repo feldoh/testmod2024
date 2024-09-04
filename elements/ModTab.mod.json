@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Mod Tab",
+    "icon": {
+      "value": "CUSTOM:Myfaceblock"
+    },
+    "showSearch": true
+  }
+}

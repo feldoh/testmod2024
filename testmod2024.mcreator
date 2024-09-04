@@ -1,0 +1,270 @@
+{
+  "mod_elements": [
+    {
+      "name": "Myfaceblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myfaceblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmod2024/models/item/myfaceblock.json",
+          "src/main/resources/assets/testmod2024/models/block/myfaceblock.json",
+          "src/main/resources/data/testmod2024/loot_tables/blocks/myfaceblock.json",
+          "src/main/java/net/mcreator/testmod/block/MyfaceblockBlock.java",
+          "src/main/resources/assets/testmod2024/blockstates/myfaceblock.json"
+        ]
+      }
+    },
+    {
+      "name": "ModTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mod_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "NightOnlyHarvestCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_only_harvest_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/NightOnlyHarvestConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MyfaceblockOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myfaceblock_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/MyfaceblockOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Autobridge",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "autobridge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/AutobridgeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SheepWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheep_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/SheepWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SheepWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheep_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/item/SheepWandItem.java",
+          "src/main/resources/assets/testmod2024/models/item/sheep_wand.json"
+        ]
+      }
+    },
+    {
+      "name": "Facearmourset",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "facearmourset",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmod2024/models/item/facearmourset_boots.json",
+          "src/main/resources/assets/testmod2024/models/item/facearmourset_leggings.json",
+          "src/main/resources/assets/testmod2024/models/item/facearmourset_helmet.json",
+          "src/main/resources/assets/testmod2024/models/item/facearmourset_chestplate.json",
+          "src/main/java/net/mcreator/testmod/item/FacearmoursetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ArmourRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armour_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmod2024/recipes/armour_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AutobridgeManual",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "autobridge_manual",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/AutobridgeManualProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:Facearmourset.body"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:Facearmourset.helmet"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:Facearmourset.boots"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:Facearmourset.legs"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item_group.testmod2024.mod_tab": "Mod Tab",
+      "item.testmod2024.facearmourset_boots": "Facearmourset Boots",
+      "item.testmod2024.facearmourset_helmet": "Facearmourset Helmet",
+      "item.testmod2024.facearmourset_chestplate": "Facearmourset Chestplate",
+      "item.testmod2024.facearmourset_leggings": "Facearmourset Leggings",
+      "block.testmod2024.myfaceblock": "My face block",
+      "item.testmod2024.sheep_wand": "Sheep Wand"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "testmod2024",
+    "modName": "testmod2024",
+    "version": "1.0.0",
+    "author": "dexte, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.6",
+    "modElementsPackage": "net.mcreator.testmod"
+  },
+  "mcreatorVersion": 202400232117
+}
