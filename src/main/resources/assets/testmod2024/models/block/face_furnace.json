@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "testmod2024:block/myface",
+    "up": "testmod2024:block/myface",
+    "north": "minecraft:block/carved_pumpkin",
+    "east": "testmod2024:block/myface",
+    "south": "testmod2024:block/myface",
+    "west": "testmod2024:block/myface",
+    "particle": "testmod2024:block/myface"
+  },
+  "render_type": "solid"
+}

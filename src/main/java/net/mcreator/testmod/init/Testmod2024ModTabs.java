@@ -29,6 +29,8 @@ public class Testmod2024ModTabs {
 				tabData.accept(Testmod2024ModItems.FACEARMOURSET_CHESTPLATE.get());
 				tabData.accept(Testmod2024ModItems.FACEARMOURSET_LEGGINGS.get());
 				tabData.accept(Testmod2024ModItems.FACEARMOURSET_BOOTS.get());
+				tabData.accept(Testmod2024ModItems.PLATFORM_WAND.get());
+				tabData.accept(Testmod2024ModBlocks.FACE_FURNACE.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

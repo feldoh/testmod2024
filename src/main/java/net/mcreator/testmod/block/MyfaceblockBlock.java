@@ -1,7 +1,6 @@
 
 package net.mcreator.testmod.block;
 
-import net.mcreator.testmod.procedures.AutobridgeManualProcedure;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.phys.BlockHitResult;
@@ -46,7 +45,7 @@ public class MyfaceblockBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		AutobridgeManualProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity, pos);
+		AutobridgeProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 
 	@Override
@@ -59,7 +58,7 @@ public class MyfaceblockBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		MyfaceblockOnBlockRightClickedProcedure.execute(world, x, y, z, direction);
+		MyfaceblockOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

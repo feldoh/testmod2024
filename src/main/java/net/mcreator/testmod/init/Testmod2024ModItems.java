@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.testmod.item.SheepWandItem;
+import net.mcreator.testmod.item.PlatformWandItem;
 import net.mcreator.testmod.item.FacearmoursetItem;
 import net.mcreator.testmod.Testmod2024Mod;
 
@@ -23,6 +24,8 @@ public class Testmod2024ModItems {
 	public static final DeferredHolder<Item, Item> FACEARMOURSET_CHESTPLATE = REGISTRY.register("facearmourset_chestplate", FacearmoursetItem.Chestplate::new);
 	public static final DeferredHolder<Item, Item> FACEARMOURSET_LEGGINGS = REGISTRY.register("facearmourset_leggings", FacearmoursetItem.Leggings::new);
 	public static final DeferredHolder<Item, Item> FACEARMOURSET_BOOTS = REGISTRY.register("facearmourset_boots", FacearmoursetItem.Boots::new);
+	public static final DeferredHolder<Item, Item> PLATFORM_WAND = REGISTRY.register("platform_wand", PlatformWandItem::new);
+	public static final DeferredHolder<Item, Item> FACE_FURNACE = block(Testmod2024ModBlocks.FACE_FURNACE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

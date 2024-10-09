@@ -19,8 +19,10 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.testmod.init.Testmod2024ModTabs;
+import net.mcreator.testmod.init.Testmod2024ModMenus;
 import net.mcreator.testmod.init.Testmod2024ModItems;
 import net.mcreator.testmod.init.Testmod2024ModBlocks;
+import net.mcreator.testmod.init.Testmod2024ModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -41,10 +43,12 @@ public class Testmod2024Mod {
 		modEventBus.addListener(this::registerNetworking);
 
 		Testmod2024ModBlocks.REGISTRY.register(modEventBus);
-
+		Testmod2024ModBlockEntities.REGISTRY.register(modEventBus);
 		Testmod2024ModItems.REGISTRY.register(modEventBus);
 
 		Testmod2024ModTabs.REGISTRY.register(modEventBus);
+
+		Testmod2024ModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

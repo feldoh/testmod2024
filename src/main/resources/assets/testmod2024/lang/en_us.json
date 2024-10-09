@@ -1,9 +1,13 @@
 {
   "item_group.testmod2024.mod_tab": "Mod Tab",
+  "gui.testmod2024.face_furnace_gui.label_face_furnace": "Face furnace",
+  "block.testmod2024.face_furnace": "Face Furnace",
   "item.testmod2024.facearmourset_boots": "Facearmourset Boots",
   "item.testmod2024.facearmourset_helmet": "Facearmourset Helmet",
   "item.testmod2024.facearmourset_chestplate": "Facearmourset Chestplate",
   "item.testmod2024.facearmourset_leggings": "Facearmourset Leggings",
+  "gui.testmod2024.face_furnace_gui.label_fuelbnbtintegerfuelremaining": "Fuel:\u003cBNBT:integer:fuelRemaining\u003e%",
   "block.testmod2024.myfaceblock": "My face block",
-  "item.testmod2024.sheep_wand": "Sheep Wand"
+  "item.testmod2024.sheep_wand": "Sheep Wand",
+  "item.testmod2024.platform_wand": "Platform Wand"
 }

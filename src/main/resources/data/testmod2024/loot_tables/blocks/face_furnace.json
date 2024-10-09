@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "testmod2024:blocks/face_furnace",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "testmod2024:face_furnace"
+        }
+      ]
+    }
+  ]
+}

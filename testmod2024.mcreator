@@ -57,8 +57,8 @@
         ],
         "dependencies": [
           {
-            "name": "direction",
-            "type": "direction"
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "x",
@@ -217,6 +217,140 @@
           }
         ]
       }
+    },
+    {
+      "name": "PlatformWandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platform_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/PlatformWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlatformWand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "platform_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmod2024/models/item/platform_wand.json",
+          "src/main/java/net/mcreator/testmod/item/PlatformWandItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FaceFurnaceGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "face_furnace_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/world/inventory/FaceFurnaceGUIMenu.java",
+          "src/main/java/net/mcreator/testmod/client/gui/FaceFurnaceGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "FaceFurnace",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "face_furnace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmod2024/models/block/face_furnace.json",
+          "src/main/java/net/mcreator/testmod/block/FaceFurnaceBlock.java",
+          "src/main/resources/assets/testmod2024/models/item/face_furnace.json",
+          "src/main/java/net/mcreator/testmod/block/entity/FaceFurnaceBlockEntity.java",
+          "src/main/resources/data/testmod2024/loot_tables/blocks/face_furnace.json",
+          "src/main/resources/assets/testmod2024/blockstates/face_furnace.json"
+        ]
+      }
+    },
+    {
+      "name": "FaceFurnaceOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "face_furnace_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/FaceFurnaceOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GetFuelRemaining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_fuel_remaining",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/testmod/procedures/GetFuelRemainingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -224,6 +358,9 @@
   "tag_elements": {
     "ITEMS:minecraft:chest_armor": [
       "~CUSTOM:Facearmourset.body"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:FaceFurnace"
     ],
     "ITEMS:minecraft:head_armor": [
       "~CUSTOM:Facearmourset.helmet"
@@ -239,12 +376,16 @@
   "language_map": {
     "en_us": {
       "item_group.testmod2024.mod_tab": "Mod Tab",
+      "gui.testmod2024.face_furnace_gui.label_face_furnace": "Face furnace",
+      "block.testmod2024.face_furnace": "Face Furnace",
       "item.testmod2024.facearmourset_boots": "Facearmourset Boots",
       "item.testmod2024.facearmourset_helmet": "Facearmourset Helmet",
       "item.testmod2024.facearmourset_chestplate": "Facearmourset Chestplate",
       "item.testmod2024.facearmourset_leggings": "Facearmourset Leggings",
+      "gui.testmod2024.face_furnace_gui.label_fuelbnbtintegerfuelremaining": "Fuel:\u003cBNBT:integer:fuelRemaining\u003e%",
       "block.testmod2024.myfaceblock": "My face block",
-      "item.testmod2024.sheep_wand": "Sheep Wand"
+      "item.testmod2024.sheep_wand": "Sheep Wand",
+      "item.testmod2024.platform_wand": "Platform Wand"
     }
   },
   "foldersRoot": {
