@@ -10,7 +10,7 @@
         "files": [
           "src/main/resources/assets/testmod2024/models/item/myfaceblock.json",
           "src/main/resources/assets/testmod2024/models/block/myfaceblock.json",
-          "src/main/resources/data/testmod2024/loot_tables/blocks/myfaceblock.json",
+          "src/main/resources/data/testmod2024/loot_table/blocks/myfaceblock.json",
           "src/main/java/net/mcreator/testmod/block/MyfaceblockBlock.java",
           "src/main/resources/assets/testmod2024/blockstates/myfaceblock.json"
         ]
@@ -180,7 +180,7 @@
       "registry_name": "armour_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/testmod2024/recipes/armour_recipe.json"
+          "src/main/resources/data/testmod2024/recipe/armour_recipe.json"
         ]
       }
     },
@@ -282,11 +282,11 @@
       "registry_name": "face_furnace",
       "metadata": {
         "files": [
+          "src/main/resources/data/testmod2024/loot_table/blocks/face_furnace.json",
           "src/main/resources/assets/testmod2024/models/block/face_furnace.json",
           "src/main/java/net/mcreator/testmod/block/FaceFurnaceBlock.java",
           "src/main/resources/assets/testmod2024/models/item/face_furnace.json",
           "src/main/java/net/mcreator/testmod/block/entity/FaceFurnaceBlockEntity.java",
-          "src/main/resources/data/testmod2024/loot_tables/blocks/face_furnace.json",
           "src/main/resources/assets/testmod2024/blockstates/face_furnace.json"
         ]
       }
@@ -404,8 +404,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.20.6",
+    "currentGenerator": "neoforge-1.21.1",
     "modElementsPackage": "net.mcreator.testmod"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400342716
 }

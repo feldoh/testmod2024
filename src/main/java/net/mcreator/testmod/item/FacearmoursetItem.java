@@ -32,8 +32,8 @@ public abstract class FacearmoursetItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 6);
-			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(new ResourceLocation("testmod2024:myfacearmour"))), 0f, 0f);
-			registerHelper.register(new ResourceLocation("testmod2024:facearmourset"), armorMaterial);
+			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("testmod2024:myfacearmour"))), 0f, 0f);
+			registerHelper.register(ResourceLocation.parse("testmod2024:facearmourset"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

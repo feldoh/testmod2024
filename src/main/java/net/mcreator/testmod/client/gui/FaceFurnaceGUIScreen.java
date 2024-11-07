@@ -32,7 +32,7 @@ public class FaceFurnaceGUIScreen extends AbstractContainerScreen<FaceFurnaceGUI
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("testmod2024:textures/screens/face_furnace_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("testmod2024:textures/screens/face_furnace_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

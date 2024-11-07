@@ -23,6 +23,8 @@ public class Testmod2024ModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, Testmod2024Mod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> FACE_FURNACE = register("face_furnace", Testmod2024ModBlocks.FACE_FURNACE, FaceFurnaceBlockEntity::new);
 
+	// Start of user code block custom block entities
+	// End of user code block custom block entities
 	private static DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> register(String registryname, DeferredHolder<Block, Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}

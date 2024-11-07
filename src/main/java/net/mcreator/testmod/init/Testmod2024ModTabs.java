@@ -36,14 +36,20 @@ public class Testmod2024ModTabs {
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+
 			tabData.accept(Testmod2024ModBlocks.MYFACEBLOCK.get().asItem());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+
 			tabData.accept(Testmod2024ModItems.FACEARMOURSET_HELMET.get());
 			tabData.accept(Testmod2024ModItems.FACEARMOURSET_CHESTPLATE.get());
 			tabData.accept(Testmod2024ModItems.FACEARMOURSET_LEGGINGS.get());
 			tabData.accept(Testmod2024ModItems.FACEARMOURSET_BOOTS.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+
 			tabData.accept(Testmod2024ModItems.SHEEP_WAND.get());
+
 		}
 	}
 }

@@ -5,7 +5,7 @@
 package net.mcreator.testmod.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
@@ -15,8 +15,8 @@ import net.mcreator.testmod.Testmod2024Mod;
 
 public class Testmod2024ModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(Testmod2024Mod.MODID);
-	public static final DeferredHolder<Block, Block> MYFACEBLOCK = REGISTRY.register("myfaceblock", MyfaceblockBlock::new);
-	public static final DeferredHolder<Block, Block> FACE_FURNACE = REGISTRY.register("face_furnace", FaceFurnaceBlock::new);
+	public static final DeferredBlock<Block> MYFACEBLOCK = REGISTRY.register("myfaceblock", MyfaceblockBlock::new);
+	public static final DeferredBlock<Block> FACE_FURNACE = REGISTRY.register("face_furnace", FaceFurnaceBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
